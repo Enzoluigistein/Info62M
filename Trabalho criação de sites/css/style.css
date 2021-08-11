@@ -1,0 +1,222 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    display: grid;
+    grid-template-columns: 15vw 15vw 15vw 15vw 15vw 15vw; 
+    justify-content: center;
+    align-content: start;
+    grid-gap: 1vw;
+}
+.container-flex{
+    display: flex;
+}
+header{
+    width: 100%;
+    height: 15vh;
+    border: 1px solid #000;
+    position: fixed;
+    background-color: #f8f6f6;
+}
+h1{
+    grid-column: span 6;
+    padding-top: 15vh;
+}
+#logo{
+    grid-column: 3/5;
+}
+#logo img{
+    width: 30vw;
+}
+nav{
+    width: 100vw;
+    grid-column: span 6;
+}
+nav ul li{
+    display: inline;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 27px;
+    padding-right:10px;
+    margin-left: 1vw;
+}
+section{
+    width: 100vw;
+}
+section div{
+    grid-column: span 6;
+}
+h1{
+    grid-column: span 6;
+    line-height: 40px
+}
+#sobre div div{
+    float: left;
+    width: 50%;
+    align-self: flex-end
+}
+#sobre div div img{
+    width: 90%;
+    border: black 1px solid;
+}
+#sobre{
+    letter-spacing: 1px;
+    line-height: 20px; 
+}
+#sobre div p{
+    text-indent: 20px;
+    text-align: justify;
+    font-size: 3vh;
+    font-family:sans-serif;
+}
+#cursos div img {
+    width:100%;
+}
+#cursos div h2{
+    margin-top:1vh;
+    background-color:#ddd;
+    text-align: Center;
+    padding:2vh 0 2vh 0;
+}
+#curso-wd{
+    border-top:2vh solid#f00;
+}
+#curso-prog{
+    border-top:2vh solid#0f0;
+}
+#curso-bd{
+    border-top:2vh solid#00f;
+}
+#planos h2{
+    color: rgb(63, 63, 63);
+    background-color: white;
+    border: 1px solid rgb(39, 39, 39);
+    text-align: center
+}
+#planos h3{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    width: 40%;
+    margin-top: 1vh;
+    margin-left: 29%;
+}
+#planos h4{
+    font-size: 6vw;
+}
+#plano-b{
+    background-color: #cd7f32;
+    width: 90%;
+    margin: 4vw;
+    padding: 1vh 2vw 1vh 2vw;
+    border: 1px solid rgb(39, 39, 39);
+}
+#plano-b p{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(39, 39, 39);
+}
+#plano-p{
+    background-color: #c0c0c0;
+    width: 90%;
+    margin: 4vw;
+    padding: 1vh 2vw 1vh 2vw;
+    border: 1px solid rgb(39, 39, 39);
+}
+#plano-p p{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(39, 39, 39);
+}
+#plano-o{
+    background-color: #ffd700;
+    width: 90%;
+    margin: 4vw;
+    padding: 1vh 2vw 1vh 2vw;
+    border: 1px solid rgb(39, 39, 39);
+}
+#plano-o p{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    border: 1px solid rgb(39, 39, 39);
+}
+#valores div{
+    margin-top: 3vh;
+}
+#qualidade{
+    background-color: violet;
+    padding-left: 1vw;
+}
+#Eficiencia{
+    background-color: rgb(130, 141, 238);
+    padding-left: 1vw;
+}
+#compromisso{
+    background-color: rgb(238, 130, 130);
+    padding-left: 1vw;
+}
+#inovação{
+    background-color: rgb(238, 227, 130);
+    padding-left: 1vw;
+}
+#pesquisa{
+    background-color: rgb(180, 130, 238);
+    padding-left: 1vw;
+}
+#qualidade2{
+    background-color: rgb(134, 238, 130);
+    padding-left: 1vw;
+}
+#valores h2{
+    background-color: rgb(255, 255, 255);
+    
+}
+#valores p{
+    background-color: white;
+    padding-left: 1vw;
+}
+
+@media only screen and (min-width: 980px){
+    #logo{
+        grid-column: 1/2;
+    }
+    #logo img{
+        width: 100%;
+    }
+    nav{
+        grid-column: 3/6;
+        margin-top: 4vh;
+    }
+    nav ul li a{
+        font-size: 40px;
+    }
+    section div{
+        grid-column: span 2;
+    }
+    #sobre div{
+        grid-column: span 3;
+    }
+
+    #cursos{
+        display:flex;
+    }
+    #cursos div{
+        align-self: flex-end;
+        width: 30%;
+    }
+    #planos{
+        display: flex;
+    }
+    #planos div{
+        align-self: flex-end;
+        width: 30%;
+    }
+    #planos h4{
+        font-size: 2vw;
+    }
+    #valores div{
+        padding-left: 1vw;
+    }
+}
