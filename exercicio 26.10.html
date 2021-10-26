@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Enzo Luigi Stein</title>
+    <meta name="author" content="Enzo">
+</head>
+
+<body>
+    
+</body>
+    
+    <script>
+        let arr = [];
+        let contador = 0;
+
+        let Imovel = function(tipo, area, endereco){
+            this.tipo = tipo;
+            this.area = area;
+            this.endereco = endereco;
+            this.dadosCompleto = function(){
+                return '{' + this.tipo + ' com ' + this.area + ' metros quadrados, localizada na '
+                         + this.endereco + '}'; 
+            }
+        }
+        
+        let confirmar = confirm("Deseja adicionar um imóvel? ");
+
+        while(confirmar == true){
+            if(contador != 0 ){
+                let confirmar = confirm("Deseja adicionar um imóvel? ");
+                if(confirmar == true){
+
+                    let estabelecimento = prompt("Estabelecimento: ");
+                    let areaQuadrada = prompt("Área em metros quadrados: ");
+                    let local = prompt("Endereço {Rua, Número, Bairro, Cidade, Estado[Sigla]}: ")
+
+                    let imovel01 = new Imovel(estabelecimento, areaQuadrada, local);
+                    arr.push(imovel01.dadosCompleto());
+
+                    contador ++;
+                }
+                else{
+                    break;
+                }
+
+            }
+            else{
+
+                if(confirmar == true){
+                    let estabelecimento = prompt("Estabelecimento: ");
+                    let areaQuadrada = prompt("Área em metros quadrados: ");
+                    let local = prompt("Endereço {Rua, Número, Bairro, Cidade, Estado[Sigla]}: ")
+
+                    let imovel = new Imovel(estabelecimento, areaQuadrada, local);
+                    arr.push(imovel.dadosCompleto());
+
+                    contador ++;
+                }
+                else{
+                    break;
+                }
+            }
+        }
+
+        let x = 0;
+
+        while(arr[x]){
+            console.log(arr[x]);
+            x++;
+        }
+
+    </script>
+
+</html>
