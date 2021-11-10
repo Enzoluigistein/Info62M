@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="resultado"></p>
+    <form mathod="POST">
+        <input type="text" id="nome" name="nome" 
+        placeholder="informe o nome" /> 
+        <button>Enviar</button>
+    </form>
+    <script>
+        let btn=document.querySelector("button")//Define que button será btn
+        btn.onclick=function(){//Cria a função para o evento onclick
+            let nome=document.querySelector("#nome").value//Define a variavel nome e atribui o valor input 
+            document.querySelector("#resultado").innerHTML=nome //Define o html do elemento com id resultado com a variavel nome
+            return false; //A função retorna falso e não continua com o processo de envio de dados
+        }
+    </script>
+</body>
+</html>
