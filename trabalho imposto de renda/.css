@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(56, 207, 26);
+    background: linear-gradient(230deg, rgb(44, 212, 58) 5%, rgba(198,222,255,1) 47%, rgb(97, 230, 57) 87%);
+    margin: 0 4vw;
+}
+
+fieldset{
+    background-color: rgb(34, 34, 34);
+    height: 70vh;
+    margin: 10vh 30vw;
+    border-radius: 1em;
+}
+
+
+#title h2 {
+    text-align: center;
+    margin-top: 4vh;
+    font-size: 4em;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(25, 65, 20);
+}
+
+.inputs{
+    position: relative;
+    text-align: center;
+    margin: 4vh 3%;
+    width: 94%;
+    box-shadow: inset 0px 0px 37px 29px rgba(255, 255, 255, 0.322);
+    padding: 1em;
+    border-radius: 1em;
+    border: 0;
+}
+
+#name{
+    margin-top: 6vh;
+}
+
+#button{
+    text-align: center;
+    margin: 2vh 3%;
+    width: 94%;
+    box-shadow: inset 0px 0px 37px 29px rgba(255, 255, 255, 0.42);
+    padding: 1em;
+    border-radius: 1em;
+    border: 0;
+}
+
+#tabela{
+    border-radius: 1em;
+}
+
+#redondo1{
+    border-radius: 1em 0 0 0;
+}
+
+#redondo2{
+    border-radius: 0 1em 0 0;
+}
+
+#tabela th{
+    text-align: center;
+    font-size: 0.8em;
+}
+
+#limpar{
+    margin-left: 36%;
+    background-color:#18d418;
+    color: #fcfcfc;
+    width: 25vw;
+    height: 30px;
+    border-radius: 50px 50px 50px 50px; 
+    border: none;
+    margin-bottom: 50px;
+}
