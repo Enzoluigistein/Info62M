@@ -1,0 +1,43 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Conversor de temperatura</title>
+	<meta name="author" content="Enzo Luigi Stein">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<link rel="stylesheet" href="./css/style.css"/>
+</head>
+
+<body>
+	<div class="tudo">
+	<div class="title"><b>Conversor de Temperaturas</b></div>
+
+	<form class="calculadora">
+		<label>Converter da Temperatura</label>
+		<input type="text" id="valor-conversao"/>
+
+		<select name="select" id="select-1" class="select-escala">
+			<option value="c" selected>Celsius (°C)</option>
+			<option value="f">Fahrenheit (°F)</option>
+			<option value="k">Kelvin (K)</option>
+		</select>
+		<label>para </label>
+
+		<select name="select" id="select-2" class="select-escala">
+			<option value="c">Celsius (°C)</option>
+			<option value="f" selected>Fahrenheit (°F)</option>
+			<option value="k">Kelvin (K)</option>
+		</select>
+
+		<input type="submit" id="button" value="Converter" />
+	</form>
+		
+	<div class="resultados">
+		
+		<p id="resultado"></p>
+	</div>
+	<script type="text/javascript" src="js/script.js"></script>
+	</div>
+</body>
+
+</html>
