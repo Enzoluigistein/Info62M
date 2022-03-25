@@ -1,0 +1,18 @@
+body{
+	background-color: #ffffff;
+}
+main{
+	display: flex;
+	Align-items: center;
+	Justify-content: center;
+}
+#DivLampada {
+	align-items: center;
+}
+#LampadaOff {
+	width: 50vh;
+}
+#BotãoOff {
+	width: 60vh;
+	margin-top: 30vh;
+}
