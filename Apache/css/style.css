@@ -1,0 +1,39 @@
+.bg-pink{
+    background-color: #f04688;
+    margin-bottom: 20px;
+}
+.btn-inscricao{
+    background-color: #fff;
+    font-family: Verdana, Geneva, sans-serif, 'IBM Plex Sans', arial, sans-serif;
+    font-size: 12px;
+    color: #f04688;
+    font-weight: bold;
+    border-radius: 100px;
+}
+.btn-formulario{
+    background-color: #f04688;
+    font-family: Verdana, Geneva, sans-serif, 'IBM Plex Sans', arial, sans-serif;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 10px;
+}
+a:link{
+    font-size: 14px;
+    color: #000;
+    text-align: right;
+    padding-left: 20px;
+    text-decoration: none;
+}
+a:link:hover{
+    color: #f04688;
+    font-size: 16px;
+}
+@media only screen and (max-width: 650px){
+	iframe{
+	      width:75vw;
+	}
+}
+
+
+
